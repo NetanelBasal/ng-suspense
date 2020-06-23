@@ -1,5 +1,14 @@
 <suspense>
-  <ng-template [defaultView]="compFactory"></ng-template>
+  <ng-template [defaultView]="usersFactory"></ng-template>
+
+  <ng-template fallbackView>
+    <h4>Fetching Users...</h4>
+  </ng-template>
+</suspense>
+
+<suspense>
+  <app-not-lazy></app-not-lazy>
+  <app-not-lazy2></app-not-lazy2>
 
   <ng-template fallbackView>
     <span>Loading... Please wait.</span>

@@ -6,7 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  compFactory = () => import('./test/test.component');
-
-  ngOnInit() {}
+  usersFactory = () => import('./test/test.component');
 }

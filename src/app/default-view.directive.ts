@@ -1,5 +1,5 @@
 import { Directive, Input, Type } from '@angular/core';
-import { Suspenseable } from './suspense/suspense.component';
+import { Suspenseable } from './types';
 
 @Directive({
   selector: '[defaultView]',
